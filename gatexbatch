@@ -1,0 +1,14 @@
+echo "start scsgate_x in background"
+if ps -A|grep scsgate_x
+then
+echo "--> process already running."
+else
+if nohup ./scsgate_x -B & >NUL
+then
+echo "O.K."
+else
+echo "ERROR"
+fi
+fi
+
+
