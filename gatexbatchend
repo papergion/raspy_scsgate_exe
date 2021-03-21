@@ -1,7 +1,7 @@
 echo "stop scsgate_x in background"
 if ps -A|grep scsgate_x
 then
-echo -n "kill -15 ">kid
+echo -n "sudo kill -15 ">kid
 ps -A|grep scsgate_x|cut -b1-5>>kid
 bash kid && cat nohup.out||echo "ERROR"
 else
