@@ -1,0 +1,7 @@
+echo "query scsgate_x..."
+if ps -A|grep scsgate_x
+then
+ps -A|grep scsgate_x
+else
+echo "--> process not found."
+fi
