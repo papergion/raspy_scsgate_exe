@@ -7,7 +7,7 @@ rm nohup.out
 if nohup sudo ./scsgate_x -B & >NUL
 then
 echo "o.k."
-cat nohup.out
+# cat nohup.out
 else
 echo "ERROR"
 fi
